@@ -31,7 +31,7 @@ export default function EditTopicForm({ id, title, description }) {
   };
   return (
     <>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 mb-52">
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -43,7 +43,7 @@ export default function EditTopicForm({ id, title, description }) {
           <input
             type="text"
             placeholder="Add Description"
-            className="border border-slate-500 px-8 w-full mt-7 h-10"
+            className="border border-slate-500 px-8 w-full mt-7 h-10 leading-3"
             value={newDescription}
             onChange={e => setNewDescription(e.target.value)}
           />

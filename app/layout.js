@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="max-w-3xl mx-auto p-4">
+        <div className="max-w-7xl mx-auto p-1">
           <Navbar />
-          <div className="overflow-y-auto h-96 mb-5">{children}</div>
+          <div className="overflow-y-auto h-98 mb-5">{children}</div>
           <Footer />
         </div>
       </body>

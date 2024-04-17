@@ -34,7 +34,7 @@ export default function AddTopic() {
     }
   };
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 mb-52">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -46,7 +46,7 @@ export default function AddTopic() {
         <input
           type="text"
           placeholder="Add Description"
-          className="border border-slate-500 px-8 w-full mt-7 h-10"
+          className="border border-slate-500 px-8 w-full mt-7 h-10 leading-3"
           onChange={e => setDescription(e.target.value)}
           value={description}
         />
