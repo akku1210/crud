@@ -23,13 +23,6 @@ export default function Footer() {
         >
           LinkedIn
         </a>
-        <a
-          className="text-white font-semibold  italic "
-          href="https://crud-operation-theta.vercel.app/"
-          target="_blank"
-        >
-          Deployment Link
-        </a>
       </div>
     </div>
   );
