@@ -39,18 +39,18 @@ export default function AddTopic() {
         <input
           type="text"
           placeholder="Add topic"
-          className="border border-slate-500 px-8 w-full mt-7 h-10"
+          className="border border-slate-500 px-8 w-full mt-7 h-10 italic"
           onChange={e => setTitle(e.target.value)}
           value={title}
         />
         <input
           type="text"
           placeholder="Add Description"
-          className="border border-slate-500 px-8 w-full mt-7 h-10 leading-3"
+          className="border border-slate-500 px-8 w-full mt-7 h-10 leading-3 italic"
           onChange={e => setDescription(e.target.value)}
           value={description}
         />
-        <button className="bg-green-500 text-white py-2 px-6 w-fit mt-7">
+        <button className="bg-green-500 text-white py-2 px-6 w-fit mt-7 italic rounded-lg font-bold">
           Add Topic
         </button>
       </form>

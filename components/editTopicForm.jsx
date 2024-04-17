@@ -36,18 +36,18 @@ export default function EditTopicForm({ id, title, description }) {
           <input
             type="text"
             placeholder="Add topic"
-            className="border border-slate-500 px-8 w-full mt-7 h-10"
+            className="border border-slate-500 px-8 w-full mt-7 h-10 italic"
             value={newTitle}
             onChange={e => setNewTitle(e.target.value)}
           />
           <input
             type="text"
             placeholder="Add Description"
-            className="border border-slate-500 px-8 w-full mt-7 h-10 leading-3"
+            className="border border-slate-500 px-8 w-full mt-7 h-10 leading-3 italic"
             value={newDescription}
             onChange={e => setNewDescription(e.target.value)}
           />
-          <button className="bg-green-500 text-white py-2 px-6 w-fit mt-7">
+          <button className="bg-green-500 text-white py-2 px-6 w-fit mt-7 rounded-lg italic font-bold">
             Update Topic
           </button>
         </form>
