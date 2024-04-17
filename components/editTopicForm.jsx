@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { BASE_API_URL } from "@/constant/contant";
 export default function EditTopicForm({ id, title, description }) {
   const [newTitle, setNewTitle] = useState(title);
   const [newDescription, setNewDescription] = useState(description);
@@ -11,7 +12,7 @@ export default function EditTopicForm({ id, title, description }) {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://localhost:3000/api/topics/${id} `, {
+      const res = await fetch(`${BASE_API_URL}/api/topics/${id} `, {
         method: "PUT",
         headers: {
           "Content-type": "application/json"
